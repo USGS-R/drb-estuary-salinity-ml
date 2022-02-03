@@ -30,7 +30,7 @@ fetch_noaa_nos.py:
   #set up AWS client
   s3_client: utils.prep_write_location(write_location, aws_profile)
 
-  station_id: '8573927'
+  station_id: '8557380'
 
   datum: 'MLLW'
   # options:
