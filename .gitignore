@@ -67,3 +67,4 @@ __pycache__/
 
 #dask
 dask-worker-space/
+.Rproj.user
