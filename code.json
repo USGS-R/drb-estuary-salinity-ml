@@ -10,66 +10,38 @@
       "licenses": [
         {
           "name": "Public Domain, CC0-1.0",
-          "URL": "https://github.com/USGS-R/drb-estuary-salinity-ml/blob/main/LICENSE.md"
+          "URL": "https://raw.githubusercontent.com/USGS-R/drb-estuary-salinity-ml/main/LICENSE.md"
         }
       ]
     },
     "homepageURL": "https://github.com/USGS-R/drb-estuary-salinity-ml/",
     "downloadURL": "https://github.com/USGS-R/drb-estuary-salinity-ml/archive/refs/heads/main.zip",
-    "disclaimerURL": "https://github.com/USGS-R/drb-estuary-salinity-ml/blob/main/DISCLAIMER.md",
+    "disclaimerURL": "https://raw.githubusercontent.com/USGS-R/drb-estuary-salinity-ml/main/DISCLAIMER.md",
     "repositoryURL": "https://github.com/USGS-R/drb-estuary-salinity-ml.git",
     "vcs": "git",
     "laborHours": -1,
     "tags": [
       "R",
-      "USGS"
+      "USGS",
+      "machine learning",
+      "estuary",
+      "salinity",
+      "explainable AI",
+      "information theory",
+      "usg-artificial-intelligence",
+      "research"
     ],
     "languages": [
       "R",
-      "Jupyter Notebook"
+      "Jupyter Notebook",
+      "python"
     ],
     "contact": {
-      "name": "amsnyder",
-      "email": "FILL ME IN"
+      "name": "Galen Gorski",
+      "email": "ggorski@usgs.gov"
     },
     "date": {
-      "metadataLastUpdated": "2023-04-07"
-    }
-  },
-  {
-    "name": "",
-    "organization": "U.S. Geological Survey",
-    "description": "",
-    "version": "v0.0.0",
-    "status": "Ideation",
-    "permissions": {
-      "usageType": "openSource",
-      "licenses": [
-        {
-          "name": "Public Domain, CC0-1.0",
-          "URL": "LICENSE.md"
-        }
-      ]
-    },
-    "homepageURL": "",
-    "downloadURL": "",
-    "disclaimerURL": "",
-    "repositoryURL": "",
-    "vcs": "git",
-    "laborHours": 1,
-    "tags": [
-      "R",
-      "USGS"
-    ],
-    "languages": [
-      "R"
-    ],
-    "contact": {
-      "name": "",
-      "email": ""
-    },
-    "date": {
-      "metadataLastUpdated": "2022-10-16"
+       "metadataLastUpdated": "2023-04-19"
     }
   }
 ]
