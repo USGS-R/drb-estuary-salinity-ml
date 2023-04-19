@@ -1,0 +1,47 @@
+[
+  {
+    "name": "drb-estuary-salinity-ml",
+    "organization": "U.S. Geological Survey",
+    "description": "drb-estuary-salinity-ml",
+    "version": "main",
+    "status": "Development",
+    "permissions": {
+      "usageType": "openSource",
+      "licenses": [
+        {
+          "name": "Public Domain, CC0-1.0",
+          "URL": "https://raw.githubusercontent.com/USGS-R/drb-estuary-salinity-ml/main/LICENSE.md"
+        }
+      ]
+    },
+    "homepageURL": "https://github.com/USGS-R/drb-estuary-salinity-ml/",
+    "downloadURL": "https://github.com/USGS-R/drb-estuary-salinity-ml/archive/refs/heads/main.zip",
+    "disclaimerURL": "https://raw.githubusercontent.com/USGS-R/drb-estuary-salinity-ml/main/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USGS-R/drb-estuary-salinity-ml.git",
+    "vcs": "git",
+    "laborHours": -1,
+    "tags": [
+      "R",
+      "USGS",
+      "machine learning",
+      "estuary",
+      "salinity",
+      "explainable AI",
+      "information theory",
+      "usg-artificial-intelligence",
+      "research"
+    ],
+    "languages": [
+      "R",
+      "Jupyter Notebook",
+      "python"
+    ],
+    "contact": {
+      "name": "Galen Gorski",
+      "email": "ggorski@usgs.gov"
+    },
+    "date": {
+       "metadataLastUpdated": "2023-04-19"
+    }
+  }
+]

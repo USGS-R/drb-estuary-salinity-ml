@@ -3,6 +3,8 @@ import urllib
 import yaml
 import datetime
 import pandas as pd
+import sys
+sys.path.insert(0, os.path.join('01_fetch', 'src'))
 import utils
 
 # import config
@@ -47,11 +49,6 @@ def process_site_info_to_csv(raw_site_info_txt, site_info_outfile_csv):
     if write_location == 'S3':
         print('uploading to s3')
         s3_client.upload_file(site_info_outfile_csv, s3_bucket, local_to_s3_pathname(site_info_outfile_csv))
-
-    # get minimum date to pull for this site
-    start_dt = site_info_df_subset[['begin_date']].min().values[0]
-
-    return start_dt
 
 def fetch_params(outfile):
     '''get table of all possible USGS site parameters'''
@@ -101,8 +98,9 @@ def fetch_single_site_data(site_num):
     site_info_outfile_txt = os.path.join('.', '01_fetch', 'out', 'metadata', f'usgs_nwis_site_info_{site_num}.txt')
     fetch_site_info(site_num, site_info_outfile_txt)
     site_info_outfile_csv = os.path.join('.', '01_fetch', 'out', 'metadata', f'usgs_nwis_site_info_{site_num}.csv')
-    start_dt = process_site_info_to_csv(site_info_outfile_txt, site_info_outfile_csv)
-    end_dt = datetime.datetime.today().strftime("%Y-%m-%d")
+    process_site_info_to_csv(site_info_outfile_txt, site_info_outfile_csv)
+    start_dt = config['start_dt']
+    end_dt = config['end_dt']
 
     # start and end dates for data fetch
     data_outfile_txt = os.path.join('.', '01_fetch', 'out', f'usgs_nwis_{site_num}.txt')
